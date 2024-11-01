@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@prisma/client':
+        specifier: 5.21.1
+        version: 5.21.1(prisma@5.21.1)
       '@radix-ui/react-icons':
         specifier: ^1.3.1
         version: 1.3.1(react@19.0.0-rc-02c0e824-20241028)
+      '@radix-ui/react-slot':
+        specifier: ^1.1.0
+        version: 1.1.0(@types/react@18.3.12)(react@19.0.0-rc-02c0e824-20241028)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -26,6 +32,9 @@ importers:
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+      prisma:
+        specifier: ^5.21.1
+        version: 5.21.1
       react:
         specifier: 19.0.0-rc-02c0e824-20241028
         version: 19.0.0-rc-02c0e824-20241028
@@ -318,10 +327,52 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
+  '@prisma/client@5.21.1':
+    resolution: {integrity: sha512-3n+GgbAZYjaS/k0M03yQsQfR1APbr411r74foknnsGpmhNKBG49VuUkxIU6jORgvJPChoD4WC4PqoHImN1FP0w==}
+    engines: {node: '>=16.13'}
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+
+  '@prisma/debug@5.21.1':
+    resolution: {integrity: sha512-uY8SAhcnORhvgtOrNdvWS98Aq/nkQ9QDUxrWAgW8XrCZaI3j2X7zb7Xe6GQSh6xSesKffFbFlkw0c2luHQviZA==}
+
+  '@prisma/engines-version@5.21.1-1.bf0e5e8a04cada8225617067eaa03d041e2bba36':
+    resolution: {integrity: sha512-qvnEflL0//lh44S/T9NcvTMxfyowNeUxTunPcDfKPjyJNrCNf2F1zQLcUv5UHAruECpX+zz21CzsC7V2xAeM7Q==}
+
+  '@prisma/engines@5.21.1':
+    resolution: {integrity: sha512-hGVTldUkIkTwoV8//hmnAAiAchi4oMEKD3aW5H2RrnI50tTdwza7VQbTTAyN3OIHWlK5DVg6xV7X8N/9dtOydA==}
+
+  '@prisma/fetch-engine@5.21.1':
+    resolution: {integrity: sha512-70S31vgpCGcp9J+mh/wHtLCkVezLUqe/fGWk3J3JWZIN7prdYSlr1C0niaWUyNK2VflLXYi8kMjAmSxUVq6WGQ==}
+
+  '@prisma/get-platform@5.21.1':
+    resolution: {integrity: sha512-sRxjL3Igst3ct+e8ya/x//cDXmpLbZQ5vfps2N4tWl4VGKQAmym77C/IG/psSMsQKszc8uFC/q1dgmKFLUgXZQ==}
+
+  '@radix-ui/react-compose-refs@1.1.0':
+    resolution: {integrity: sha512-b4inOtiaOnYf9KWyO3jAeeCG6FeyfY6ldiEPanbUjWd+xIk5wZeHa8yVwmrJ2vderhu/BQvzCrJI0lHd+wIiqw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   '@radix-ui/react-icons@1.3.1':
     resolution: {integrity: sha512-QvYompk0X+8Yjlo/Fv4McrzxohDdM5GgLHyQcPpcsPvlOSXCGFjdbuyGL5dzRbg0GpknAjQJJZzdiRK7iWVuFQ==}
     peerDependencies:
       react: ^16.x || ^17.x || ^18.x || ^19.x
+
+  '@radix-ui/react-slot@1.1.0':
+    resolution: {integrity: sha512-FUCf5XMfmW4dtYl69pdS4DbxKy8nj4M7SafBgPllysxmdachynNflAdp/gCsnYWNDnge6tI9onzMp5ARYc1KNw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   '@rocketseat/eslint-config@2.2.2':
     resolution: {integrity: sha512-kSWN4FOyhTEiD2O6OGL2OG89MHq8HSoDwOVvy6Xqdv1DytdMvOgZsD7xBYsAyYWvwD0P+YR1nIDluVGCV+GNxA==}
@@ -1615,6 +1666,11 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  prisma@5.21.1:
+    resolution: {integrity: sha512-PB+Iqzld/uQBPaaw2UVIk84kb0ITsLajzsxzsadxxl54eaU5Gyl2/L02ysivHxK89t7YrfQJm+Ggk37uvM70oQ==}
+    engines: {node: '>=16.13'}
+    hasBin: true
+
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
@@ -2143,9 +2199,47 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
+  '@prisma/client@5.21.1(prisma@5.21.1)':
+    optionalDependencies:
+      prisma: 5.21.1
+
+  '@prisma/debug@5.21.1': {}
+
+  '@prisma/engines-version@5.21.1-1.bf0e5e8a04cada8225617067eaa03d041e2bba36': {}
+
+  '@prisma/engines@5.21.1':
+    dependencies:
+      '@prisma/debug': 5.21.1
+      '@prisma/engines-version': 5.21.1-1.bf0e5e8a04cada8225617067eaa03d041e2bba36
+      '@prisma/fetch-engine': 5.21.1
+      '@prisma/get-platform': 5.21.1
+
+  '@prisma/fetch-engine@5.21.1':
+    dependencies:
+      '@prisma/debug': 5.21.1
+      '@prisma/engines-version': 5.21.1-1.bf0e5e8a04cada8225617067eaa03d041e2bba36
+      '@prisma/get-platform': 5.21.1
+
+  '@prisma/get-platform@5.21.1':
+    dependencies:
+      '@prisma/debug': 5.21.1
+
+  '@radix-ui/react-compose-refs@1.1.0(@types/react@18.3.12)(react@19.0.0-rc-02c0e824-20241028)':
+    dependencies:
+      react: 19.0.0-rc-02c0e824-20241028
+    optionalDependencies:
+      '@types/react': 18.3.12
+
   '@radix-ui/react-icons@1.3.1(react@19.0.0-rc-02c0e824-20241028)':
     dependencies:
       react: 19.0.0-rc-02c0e824-20241028
+
+  '@radix-ui/react-slot@1.1.0(@types/react@18.3.12)(react@19.0.0-rc-02c0e824-20241028)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.0(@types/react@18.3.12)(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.0-rc-02c0e824-20241028
+    optionalDependencies:
+      '@types/react': 18.3.12
 
   '@rocketseat/eslint-config@2.2.2(eslint@8.57.1)(typescript@5.6.3)':
     dependencies:
@@ -3635,6 +3729,12 @@ snapshots:
       prettier: 3.3.3
 
   prettier@3.3.3: {}
+
+  prisma@5.21.1:
+    dependencies:
+      '@prisma/engines': 5.21.1
+    optionalDependencies:
+      fsevents: 2.3.3
 
   prop-types@15.8.1:
     dependencies:
