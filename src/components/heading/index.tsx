@@ -7,7 +7,7 @@ function Heading({ className, ...props }: IHeadingProps) {
     <h1
       {...props}
       className={cn(
-        'text-secondary-foreground text-pretty text-4xl font-semibold tracking-tight sm:text-5xl',
+        'text-pretty text-4xl font-semibold tracking-tight text-secondary-foreground sm:text-5xl',
         className,
       )}
     />
