@@ -22,15 +22,13 @@ function DiscordChatHeader() {
 
       <div className="flex items-center">
         <div className="relative">
-          <div className="mr-3 flex size-10 items-center justify-center overflow-hidden rounded-full bg-primary">
-            <Image
-              src="/vercel.svg"
-              alt="PingNeo avatar"
-              width={20}
-              height={20}
-              className="size-5 object-cover"
-            />
-          </div>
+          <Image
+            src="/pingneo-avatar.png"
+            alt="PingNeo avatar"
+            width={20}
+            height={20}
+            className="mr-3 size-10 rounded-full object-cover"
+          />
 
           <div className="absolute bottom-0 right-3 size-3 animate-pulse rounded-full border-2 border-[#36393F] bg-green-500" />
         </div>

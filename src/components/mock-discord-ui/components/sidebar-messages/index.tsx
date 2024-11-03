@@ -33,15 +33,13 @@ function DiscordSidebarMessages() {
           </h3>
 
           <div className="flex items-center rounded bg-[#393C43] px-2 py-1.5">
-            <div className="mr-3 flex size-8 items-center justify-center overflow-hidden rounded-full bg-primary">
-              <Image
-                src="/vercel.svg"
-                alt="PingNeo avatar"
-                width={16}
-                height={16}
-                className="size-4 object-cover"
-              />
-            </div>
+            <Image
+              src="/pingneo-avatar.png"
+              alt="PingNeo avatar"
+              width={16}
+              height={16}
+              className="mr-3 size-8 rounded-full object-cover"
+            />
 
             <span className="font-medium text-white">PingNeo</span>
           </div>
