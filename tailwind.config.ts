@@ -50,6 +50,13 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        discord: {
+          background: '#36393F',
+          brand: '#5865F2',
+          gray: '#36393F',
+          text: '#DCDDDE',
+          timestamp: '#72767D',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',

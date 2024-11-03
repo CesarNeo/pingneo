@@ -4,6 +4,7 @@ import { Children } from 'react'
 
 import Heading from '@/components/heading'
 import MaxWidthWrapper from '@/components/max-width-wrapper'
+import MockDiscordUi from '@/components/mock-discord-ui'
 import { Button } from '@/components/ui/button'
 
 function Home() {
@@ -57,7 +58,17 @@ function Home() {
           </div>
         </MaxWidthWrapper>
       </section>
-      <section></section>
+
+      <section className="relative bg-primary-foreground pb-4">
+        <div className="absolute inset-x-0 bottom-24 top-24 bg-primary" />
+        <div className="relative mx-auto">
+          <MaxWidthWrapper className="relative">
+            <div className="-m-2 rounded-xl bg-muted/35 p-2 ring-1 ring-inset lg:-m-4 lg:rounded-2xl lg:p-4">
+              <MockDiscordUi />
+            </div>
+          </MaxWidthWrapper>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <section></section>
