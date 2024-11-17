@@ -16,14 +16,16 @@ function RootLayout({ children }: PropsWithChildren) {
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={cn('antialiased')}>
+        <body
+          className={cn('flex min-h-[calc(100dvh-1px)] flex-col antialiased')}
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <main className="relative flex flex-1 flex-col">{children}</main>
           </ThemeProvider>
         </body>
       </html>

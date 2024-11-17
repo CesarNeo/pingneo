@@ -1,4 +1,5 @@
 import { SignOutButton } from '@clerk/nextjs'
+import { currentUser } from '@clerk/nextjs/server'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
@@ -7,8 +8,8 @@ import ToggleTheme from '../toggle-theme'
 import { Button } from '../ui/button'
 import { Separator } from '../ui/separator'
 
-function Navbar() {
-  const user = null
+async function Navbar() {
+  const user = await currentUser()
 
   return (
     <nav className="sticky inset-x-0 top-0 z-40 h-16 w-full border-b border-border bg-background/80 backdrop-blur-lg transition-all">
